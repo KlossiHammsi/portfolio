@@ -47,7 +47,7 @@ function Project() {
                     <a href="https://www.canva.com/design/DAGGVQU4LHY/5b8C6O63-IQGhXFcDqUVlQ/watch?utm_content=DAGGVQU4LHY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he34b116a2c" target="_blank" rel="noreferrer">
                         <h2>Gym Plus Application Development (Flutter, Firebase)</h2>
                     </a>
-                    <p>Designed and developed "Gym Plus," a React Native application with Expo framework, to provide users with visual guides for weight training and a macro-nutrient tracker. The app includes interactive animations for exercise techniques, a training calendar, and a nutrition tracker, making it a comprehensive tool for fitness management.</p>
+                    <p>Designed and developed "Gym Plus" a React Native application with Expo framework, to provide users with visual guides for weight training and a macro-nutrient tracker. The app includes interactive animations for exercise techniques, a training calendar, and a nutrition tracker, making it a comprehensive tool for fitness management.</p>
                 </div>
 
                 {/* 4. Multiple Regression Property Analysis */}
