@@ -2,7 +2,7 @@ import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
 
@@ -23,7 +23,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">Full-Stack Web Developer</h3>
             <h4 className="vertical-timeline-element-subtitle">Semarang, Indonesia</h4>
             <p>
-              Full-stack Web Development, API Integration, User Experience
+              Full-Stack Web Development, at PT Elgibor Solutions
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -46,6 +46,7 @@ function Timeline() {
           >
             <h3 className="vertical-timeline-element-title">Computer Science Student at Binus University</h3>
             <h4 className="vertical-timeline-element-subtitle">Semarang, Indonesia</h4>
+            <h5 className="vertical-timeline-element-subtitle" style={{color: 'black'}}>(GPA : 3,82)</h5>
             <p>
               Relevant Coursework: Data Structures and Algorithms, Database Systems, Web Development
             </p>
