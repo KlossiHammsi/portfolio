@@ -8,21 +8,64 @@ import mock06 from '../assets/images/mock06.png';
 import mock07 from '../assets/images/mock07.png';
 import mock08 from '../assets/images/mock08.png';
 import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/mock10.png';
+import primaya from '../assets/images/primaya.png';
+import sistrack from '../assets/images/sistrack.png';
+import financia from '../assets/images/financia.png';
+import dmi from '../assets/images/dmi.png';
+
 import '../assets/styles/Project.scss';
 
 function Project() {
     return (
         <div className="projects-container" id="projects">
+            <h1>Working Projects</h1>
+            <div className="projects-grid">
+
+                {/* 1. Primaya Hospital */}
+                <div className="project">
+                    <a>
+                        <img src={primaya} className="zoom" alt="thumbnail" width="100%" />
+                    </a>
+                    <a target="_blank" rel="noreferrer">
+                        <h2>Primaya Hospital (Front-End Developer)</h2>
+                    </a>
+                    <p>Primaya Hospital is a comprehensive hospital information system (HIS) designed to streamline medical operations and executive monitoring through a data-driven approach. As a Front-End Developer, I implemented a complex modules that synchronizes real-time data. Leveraging React TypeScript and Material-UI, I developed advanced features including an automated approval workflow system and seamless HIS API integration to ensure high-performance data visualization and secure access control.</p>
+                </div>
+
+                {/* 2. Sistrack */}
+                <div className="project">
+                    <a>
+                        <img src={sistrack} className="zoom" alt="thumbnail" width="100%" />
+                    </a>
+                    <a target="_blank" rel="noreferrer">
+                        <h2>Sistrack (Full-Stack Developer)</h2>
+                    </a>
+                    <p>Sistrack is a GPS tracking solution designed to protect and manage your company’s operational vehicles. By registering as a Sistrack partner, users can easily monitor the location of their vehicles anytime and from anywhere. The system provides complete GPS tracking features with a user-friendly interface that can be accessed conveniently through both PC and mobile devices. 🚗📍</p>
+                </div>
+
+                {/* 3. DMI */}
+                <div className="project">
+                    <a>
+                        <img src={dmi} className="zoom" alt="thumbnail" width="100%" />
+                    </a>
+                    <a target="_blank" rel="noreferrer">
+                        <h2>DMI ERP (Full-Stack Developer)</h2>
+                    </a>
+                    <p>DMI is a sophisticated SaaS-based accounting and CRM platform tailored to enhance financial management and business scalability. I contributed to the project by developing modular full-end components using Angular TypeScript & Laravel.</p>
+                </div>
+
+
+
+            </div>
             <h1>Personal Projects</h1>
             <div className="projects-grid">
 
                 {/* 1. Submeowrine */}
                 <div className="project">
-                    <a href="https://github.com/JustinWibowo1/Gym-Plus" target="_blank" rel="noreferrer">
+                    <a href="https://www.canva.com/design/DAGGVQU4LHY/5b8C6O63-IQGhXFcDqUVlQ/watch?utm_content=DAGGVQU4LHY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he34b116a2c" target="_blank" rel="noreferrer">
                         <img src={mock01} className="zoom" alt="thumbnail" width="100%" />
                     </a>
-                    <a href="https://github.com/JustinWibowo1/Gym-Plus" target="_blank" rel="noreferrer">
+                    <a href="https://www.canva.com/design/DAGGVQU4LHY/5b8C6O63-IQGhXFcDqUVlQ/watch?utm_content=DAGGVQU4LHY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he34b116a2c" target="_blank" rel="noreferrer">
                         <h2>Gym Plus Thesis (Flutter, Python)</h2>
                     </a>
                     <p>Gym Plus is a high-performance mobile-cloud application designed to act as an AI-powered fitness personal trainer. It leverages advanced Computer Vision to provide real-time workout monitoring and form analysis without the need for wearable sensors.</p>
