@@ -22,7 +22,7 @@ function Main() {
             <a href="https://www.canva.com/design/DAGGVQU4LHY/5b8C6O63-IQGhXFcDqUVlQ/watch?utm_content=DAGGVQU4LHY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he34b116a2c" target="_blank" rel="noreferrer"><SiCanva /></a>
           </div>
           <h1>Steffano Clausivancio</h1>
-          <p>Front-End Web Dev</p>
+          <p>Full Stack Web Developer</p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/yujisatojr" target="_blank" rel="noreferrer"><GitHubIcon /></a>

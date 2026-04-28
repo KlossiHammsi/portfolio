@@ -43,23 +43,24 @@ const labelsThird = [
 
 function Expertise() {
     return (
-    <div className="container" id="expertise">
-        <div className="skills-container">
-            <h1>Expertise</h1>
-            <div className="skills-grid">
-                <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Front-End Web Development</h3>
-                    <p>I am a results-driven Frontend Developer with hands-on experience in building enterprise-level applications using React and Angular. Throughout my professional internship, I have successfully translated complex UI/UX designs into functional, high-performance web solutions while ensuring seamless API integration and data synchronization.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
+        <div className="container" id="expertise">
+            <div className="skills-container">
+                <h1>Expertise</h1>
+                <div className="skills-grid">
+                    <div className="skill">
+                        <FontAwesomeIcon icon={faReact} size="3x" />
+                        <h3>Full Stack Web Development</h3>
+                        <p>I am a results-driven Full Stack Web Developer with proven experience in designing, developing, and deploying enterprise-level web applications using React, Laravel, and Angular. I specialize in both front-end and back-end development, ensuring seamless integration between user interfaces, APIs, and databases. During my professional internship, I successfully transformed complex UI/UX designs into high-performance, scalable web solutions
+                            while maintaining efficient data synchronization and system reliability.</p>
+                        <div className="flex-chips">
+                            <span className="chip-title">Tech stack:</span>
+                            {labelsFirst.map((label, index) => (
+                                <Chip key={index} className='chip' label={label} />
+                            ))}
+                        </div>
                     </div>
-                </div>
 
-                {/* <div className="skill">
+                    {/* <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
                     <h3>DevOps & Automation</h3>
                     <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
@@ -71,7 +72,7 @@ function Expertise() {
                     </div>
                 </div> */}
 
-                {/* <div className="skill">
+                    {/* <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
                     <h3>GenAI & LLM</h3>
                     <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
@@ -82,9 +83,9 @@ function Expertise() {
                         ))}
                     </div>
                 </div> */}
+                </div>
             </div>
         </div>
-    </div>
     );
 }
 
