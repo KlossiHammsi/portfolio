@@ -5,7 +5,7 @@ import { faReact } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 
 const labelsFirst = [
-    "React", "TypeScript", "Angular", "HTML", "CSS", "SASS", "Flask", "Python", "SQL", "Laravel", "Postman"
+    "React", "TypeScript", "Angular", "HTML", "CSS", "GIT", "Flask", "Python", "SQL", "Laravel", "Postman"
 ];
 
 function Expertise() {
