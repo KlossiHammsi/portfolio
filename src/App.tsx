@@ -9,7 +9,7 @@ import {
   Footer,
 } from "./components";
 import FadeIn from './components/FadeIn';
-import './index.scss';
+import './index.css';
 
 function App() {
     const [mode, setMode] = useState<string>('dark');
@@ -28,7 +28,7 @@ function App() {
 
     return (
     <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
-        <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
+        {/* <Navigation parentToChild={{mode}} modeChange={handleModeChange}/> */}
         <FadeIn transitionDuration={700}>
             <Main/>
             <Expertise/>

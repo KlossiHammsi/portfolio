@@ -1,37 +1,80 @@
 import React from "react";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import '../assets/styles/Main.scss';
-import profile from '../assets/images/profile.png';
-import { SiCanva } from "react-icons/si";
 
-function Main() {
+const Main: React.FC = () => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>, id: string) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
-    <div className="container">
-      <div className="about-section">
-        <div className="image-wrapper">
-          {/* <img src="https://res.cloudinary.com/dglpseues/image/upload/v1770785092/Gemini_Generated_Image_d13tvmd13tvmd13t_w6b1la.png" alt="Avatar" /> */}
-          <img src={profile} alt="Avatar" />
+    <div id="home" className="relative min-h-screen w-full overflow-hidden bg-background">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 z-0 h-full w-full object-cover"
+      >
+        <source
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260314_131748_f2ca2a28-fed7-44c8-b9a9-bd9acdd5ec31.mp4"
+          type="video/mp4"
+        />
+      </video>
 
+      {/* Navigation */}
+      <nav className="relative z-10 mx-auto flex max-w-7xl flex-row justify-between px-8 py-6">
+        <div 
+          className="text-3xl tracking-tight text-foreground cursor-pointer"
+          style={{ fontFamily: "'Instrument Serif', serif" }}
+          onClick={(e: any) => handleScroll(e, "home")}
+        >
+          Steffano Clausivancio .S
         </div>
-        <div className="content">
-          <div className="social_icons">
-            <a href="https://github.com/KlossiHammsi" target="_blank" rel="noreferrer"><GitHubIcon /></a>
-            <a href="https://www.linkedin.com/in/steffano-clausivancio-45a37a305/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
-            <a href="https://www.canva.com/design/DAGGVQU4LHY/5b8C6O63-IQGhXFcDqUVlQ/watch?utm_content=DAGGVQU4LHY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he34b116a2c" target="_blank" rel="noreferrer"><SiCanva /></a>
-          </div>
-          <h1>Steffano Clausivancio</h1>
-          <p>Full Stack Web Developer</p>
+        
+        <div className="hidden flex-row items-center gap-8 md:flex">
+          <a href="#home" onClick={(e) => handleScroll(e, "home")} className="text-sm text-foreground transition-colors">Home</a>
+          <a href="#expertise" onClick={(e) => handleScroll(e, "expertise")} className="text-sm text-muted-foreground transition-colors hover:text-foreground">Expertise</a>
+          <a href="#history" onClick={(e) => handleScroll(e, "history")} className="text-sm text-muted-foreground transition-colors hover:text-foreground">History</a>
+          <a href="#projects" onClick={(e) => handleScroll(e, "projects")} className="text-sm text-muted-foreground transition-colors hover:text-foreground">Projects</a>
+          <a href="#contact" onClick={(e) => handleScroll(e, "contact")} className="text-sm text-muted-foreground transition-colors hover:text-foreground">Contact</a>
+        </div>
 
-          <div className="mobile_social_icons">
-            <a href="https://github.com/yujisatojr" target="_blank" rel="noreferrer"><GitHubIcon /></a>
-            <a href="https://www.linkedin.com/in/yujisato/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
-          </div>
-        </div>
-      </div>
+        <button 
+          onClick={(e) => handleScroll(e, "expertise")}
+          className="liquid-glass rounded-full px-6 py-2.5 text-sm text-foreground transition-transform hover:scale-[1.03] flex items-center justify-center cursor-pointer"
+        >
+          Begin Journey
+        </button>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="relative z-10 flex flex-col items-center justify-center px-6 pb-40 pt-32 text-center">
+        <h1 
+          className="animate-fade-rise max-w-7xl text-5xl font-normal leading-[0.95] tracking-[-2.46px] text-foreground sm:text-7xl md:text-8xl"
+          style={{ fontFamily: "'Instrument Serif', serif" }}
+        >
+          Where <em className="not-italic text-muted-foreground">dreams</em> rise <br />
+          <em className="not-italic text-muted-foreground">through the silence.</em>
+        </h1>
+
+        <p className="animate-fade-rise-delay mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+          We're designing tools for deep thinkers, bold creators, and quiet rebels. 
+          Amid the chaos, we build digital spaces for sharp focus and inspired work.
+        </p>
+
+        <button 
+          onClick={(e) => handleScroll(e, "expertise")} 
+          className="liquid-glass animate-fade-rise-delay-2 mt-12 cursor-pointer rounded-full px-14 py-5 text-base text-foreground transition-transform hover:scale-[1.03]"
+        >
+          Begin Journey
+        </button>
+      </section>
     </div>
   );
-}
+};
 
 export default Main;

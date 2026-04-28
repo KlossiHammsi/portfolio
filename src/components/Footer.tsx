@@ -1,16 +1,31 @@
 import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import '../assets/styles/Footer.scss'
 
 function Footer() {
   return (
-    <footer>
-      <div>
-        <a href="https://github.com/KlossiHammsi" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-        <a href="https://www.linkedin.com/in/steffano-clausivancio-45a37a305/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+    <footer id="contact" className="relative z-10 py-10 text-center bg-background">
+      <div className="flex justify-center gap-6 mb-4">
+        <a 
+          href="https://github.com/KlossiHammsi" 
+          target="_blank" 
+          rel="noreferrer"
+          className="text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <GitHubIcon />
+        </a>
+        <a 
+          href="https://www.linkedin.com/in/steffano-clausivancio-45a37a305/" 
+          target="_blank" 
+          rel="noreferrer"
+          className="text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <LinkedInIcon />
+        </a>
       </div>
-      {/* <p>A portfolio designed & built by <a href="https://github.com/yujisatojr/react-portfolio-template" target="_blank" rel="noreferrer">Yuji Sato</a> with 💜</p> */}
+      <p className="text-sm text-muted-foreground">
+        &copy; {new Date().getFullYear()} Steffano Clausivancio. All rights reserved.
+      </p>
     </footer>
   );
 }
