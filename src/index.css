@@ -8,7 +8,7 @@
   --background: 201 100% 13%;
   --foreground: 0 0% 100%;
   --muted: 0 0% 10%;
-  --muted-foreground: 240 4% 66%;
+  --muted-foreground: 210 20% 82%;
   --popover: 201 100% 13%;
   --popover-foreground: 0 0% 100%;
   --card: 201 100% 13%;
@@ -151,7 +151,6 @@ body {
 /* Date text color & typography reset */
 .vertical-timeline-element-date {
   color: hsl(var(--muted-foreground)) !important;
-  opacity: 0.9;
 }
 .vertical-timeline span {
     font-family: var(--font-body);

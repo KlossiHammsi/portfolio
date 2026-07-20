@@ -55,13 +55,13 @@ function WorkCard({ image, title, role, description }: WorkCardProps) {
       {/* Content */}
       <div className="flex flex-col flex-1 p-6 gap-3">
         {/* Role badge */}
-        <span className="self-start text-[11px] font-medium uppercase tracking-widest px-2.5 py-1 rounded-full border border-white/10 bg-secondary/60 text-muted-foreground">
+        <span className="self-start text-[11px] font-medium uppercase tracking-widest px-2.5 py-1 rounded-full border border-white/10 bg-secondary/60 text-foreground/90">
           {role}
         </span>
 
         <h2 className="text-lg font-bold leading-snug text-foreground">{title}</h2>
 
-        <p className="text-muted-foreground/90 leading-relaxed text-sm flex-1">{description}</p>
+        <p className="text-muted-foreground leading-relaxed text-sm flex-1">{description}</p>
       </div>
     </div>
   );
@@ -87,13 +87,13 @@ function PersonalCard({ image, title, tech, description, href }: PersonalCardPro
       {/* Content */}
       <div className="flex flex-col flex-1 p-6 gap-3">
         {/* Tech badge */}
-        <span className="self-start text-[11px] font-medium uppercase tracking-widest px-2.5 py-1 rounded-full border border-white/10 bg-secondary/60 text-muted-foreground">
+        <span className="self-start text-[11px] font-medium uppercase tracking-widest px-2.5 py-1 rounded-full border border-white/10 bg-secondary/60 text-foreground/90">
           {tech}
         </span>
 
         <h2 className="text-lg font-bold leading-snug text-foreground">{title}</h2>
 
-        <p className="text-muted-foreground/90 leading-relaxed text-sm flex-1">{description}</p>
+        <p className="text-muted-foreground leading-relaxed text-sm flex-1">{description}</p>
 
         {/* Action link — only rendered & visible when URL is real */}
         {hasLink && (
@@ -102,7 +102,7 @@ function PersonalCard({ image, title, tech, description, href }: PersonalCardPro
               href={href}
               target="_blank"
               rel="noreferrer"
-              className="project-action inline-flex items-center gap-1.5 text-xs font-medium text-primary/60 hover:text-primary transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded"
+              className="project-action inline-flex items-center gap-1.5 text-xs font-medium text-primary/80 hover:text-primary transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded"
               aria-label={`View project: ${title}`}
             >
               View Project
