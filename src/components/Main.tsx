@@ -41,7 +41,7 @@ const Main: React.FC = () => {
           <a href="#expertise" onClick={(e) => handleScroll(e, "expertise")} className="text-sm text-muted-foreground transition-colors hover:text-foreground">Expertise</a>
           <a href="#history" onClick={(e) => handleScroll(e, "history")} className="text-sm text-muted-foreground transition-colors hover:text-foreground">History</a>
           <a href="#projects" onClick={(e) => handleScroll(e, "projects")} className="text-sm text-muted-foreground transition-colors hover:text-foreground">Projects</a>
-          <a href="#contact" onClick={(e) => handleScroll(e, "contact")} className="text-sm text-muted-foreground transition-colors hover:text-foreground">Contact</a>
+          {/* <a href="#contact" onClick={(e) => handleScroll(e, "contact")} className="text-sm text-muted-foreground transition-colors hover:text-foreground">Contact</a> */}
         </div>
 
         <button

@@ -66,6 +66,41 @@ body {
   pointer-events: none;
 }
 
+/* Project card hover effects — uses transform+opacity only for GPU compositing */
+.project-card {
+  transition: transform 300ms ease-out, box-shadow 300ms ease-out, border-color 300ms ease-out;
+  box-shadow: 0 4px 24px -8px rgba(0,0,0,0.4);
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 64px -12px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.12);
+}
+
+.project-card .project-img {
+  transition: transform 350ms ease-out;
+}
+.project-card:hover .project-img {
+  transform: scale(1.04);
+}
+
+.project-card .project-overlay {
+  transition: opacity 300ms ease-out;
+  opacity: 0;
+}
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-card .project-action {
+  transition: opacity 250ms ease-out, transform 250ms ease-out;
+  opacity: 0;
+  transform: translateY(6px);
+}
+.project-card:hover .project-action {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .animate-fade-rise { 
   animation: fade-rise 0.8s ease-out both; 
 }

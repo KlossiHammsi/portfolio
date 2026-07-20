@@ -9,19 +9,19 @@ function About() {
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-1 items-center">
-                    
+
                     {/* Image Side */}
                     <div className="relative group max-w-sm mx-auto">
                         <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-transparent rounded-3xl blur-2xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
                         <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-white/10 bg-secondary/50">
                             {/* Ganti src dengan path foto Anda nanti, contoh: import profileImg from '../assets/images/me.jpg' */}
-                            <img 
+                            <img
                                 src={profile}
                                 alt="Steffano Clausivancio"
                                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
                             />
                         </div>
-                        
+
                         {/* Experience Badge */}
                         {/* <div className="absolute -bottom-6 -right-6 liquid-glass p-6 rounded-2xl border border-white/10 hidden md:block">
                             <span className="block text-3xl font-bold text-foreground">1+</span>
@@ -55,8 +55,12 @@ function About() {
                             </div>
                             <div className="flex flex-col gap-1">
                                 <span className="text-xs uppercase text-muted-foreground tracking-wider">Current Role</span>
-                                <span className="text-foreground font-medium">Full Stack Developer @ PT Elgibor</span>
+                                <span className="text-foreground font-medium">Full Stack Developer @ PT Elgibor Solution</span>
                             </div>
+                            <div className="flex flex-col gap-1">
+                                <span className="text-xs uppercase text-muted-foreground tracking-wider">Email</span>
+                                <span className="text-foreground font-medium">steffanoclausivancio@gmail.com</span>
+                            </div>  
                         </div>
                     </div>
                 </div>
