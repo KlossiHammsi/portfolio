@@ -16,41 +16,39 @@ function Timeline() {
         <VerticalTimeline>
           {/* @ts-ignore */}
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
+            className="timeline-card"
             date="Feb 2026 - present"  
-            iconStyle={{ background: '#5000ca', color: 'white' }}
+            iconStyle={{ background: 'hsl(var(--secondary))', border: '1px solid rgba(255,255,255,0.1)', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase as any} className="text-white" />}
           >
-            <h3 className="text-xl font-bold text-[#272822] mb-1">Full-Stack Web Developer</h3>
-            <h4 className="text-lg font-semibold text-[#272822] opacity-80">Semarang, Indonesia</h4>
-            <p className="text-[#272822] mt-2">Full-Stack Web Development, at PT Elgibor Solutions</p>
+            <h3 className="text-xl font-bold text-foreground mb-1">Full-Stack Web Developer</h3>
+            <h4 className="text-sm font-medium text-primary/70 uppercase tracking-wide mb-2">Semarang, Indonesia</h4>
+            <p className="text-muted-foreground/90 leading-relaxed text-sm">Full-Stack Web Development, at PT Elgibor Solutions</p>
           </VerticalTimelineElement>
           
           {/* @ts-ignore */}
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className="timeline-card"
             date="Feb 2025 - Feb 2026"
-            iconStyle={{ background: '#5000ca', color: 'white' }}
+            iconStyle={{ background: 'hsl(var(--secondary))', border: '1px solid rgba(255,255,255,0.1)', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase as any} className="text-white" />}
           >
-            <h3 className="text-xl font-bold text-[#272822] mb-1">Front-End Web Developer Internship</h3>
-            <h4 className="text-lg font-semibold text-[#272822] opacity-80">Semarang, Indonesia</h4>
-            <p className="text-[#272822] mt-2">Frontend Development Internship, at PT Elgibor Solutions</p>
+            <h3 className="text-xl font-bold text-foreground mb-1">Front-End Web Developer Internship</h3>
+            <h4 className="text-sm font-medium text-primary/70 uppercase tracking-wide mb-2">Semarang, Indonesia</h4>
+            <p className="text-muted-foreground/90 leading-relaxed text-sm">Frontend Development Internship, at PT Elgibor Solutions</p>
           </VerticalTimelineElement>
           
           {/* @ts-ignore */}
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className="timeline-card"
             date="2022 - 2026"
-            iconStyle={{ background: '#5000ca', color: 'white' }}
+            iconStyle={{ background: 'hsl(var(--secondary))', border: '1px solid rgba(255,255,255,0.1)', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase as any} className="text-white" />}
           >
-            <h3 className="text-xl font-bold text-[#272822] mb-1">Computer Science Student at Binus University</h3>
-            <h4 className="text-lg font-semibold text-[#272822] opacity-80">Semarang, Indonesia</h4>
-            <h5 className="text-base font-semibold text-[#272822] mb-1">(GPA : 3,81)</h5>
-            <p className="text-[#272822] mt-2">Relevant Coursework: Data Structures and Algorithms, Database Systems, Web Development</p>
+            <h3 className="text-xl font-bold text-foreground mb-1">Computer Science Student</h3>
+            <h4 className="text-sm font-medium text-primary/70 uppercase tracking-wide mb-1">Binus University • Semarang, Indonesia</h4>
+            <h5 className="text-xs font-semibold text-primary mb-2 opacity-80">(GPA: 3.81)</h5>
+            <p className="text-muted-foreground/90 leading-relaxed text-sm">Relevant Coursework: Data Structures and Algorithms, Database Systems, Web Development</p>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
